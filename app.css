@@ -1,0 +1,376 @@
+/* dodgedesign.io - Palette: 
+1b262c - Deep Dark Blue 
+0f4c75 - Dark Blue
+3282b8 - Blue
+bbe1fa - Light Blue
+*/
+
+body, html {
+    margin: 0;
+    color: darkgrey;
+    font-family: "Muli",sans-serif;
+    font-weight: 400;
+}
+
+body {
+    min-width: 320px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #1b262c;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    color: grey;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: darkgrey;
+}
+
+h4 {
+    font-size: .7rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    padding-bottom: 20px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.row {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    height: 100vh;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn {
+    color: grey;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 30px;
+    transition: all .4s ease;
+}
+
+.btn:hover {
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px){
+    .section {
+        height: 100vh !important;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    p, li {
+        font-size: .9em;
+    }
+
+    #skills div a {
+        margin-top: 50px;
+    }
+}
+
+    /* ------------- UTILITIES ------------- */
+
+.off-white {
+    background: #fafafa;
+    border-bottom: #dddddd solid 1px;
+    border-top: #dddddd solid 1px;
+}
+
+.gut-100 {
+    margin-bottom: 100px;
+}
+.gut-50 {
+    margin-bottom: 1.5em;
+}
+
+    /* ------------- ANIMATIONS ------------- */
+
+.animate-fadeup {
+    animation: fadein 2s, translate-up 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes translate-up {
+    0% { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+}
+
+    /* ------------- VIDEO ------------- */
+
+/* For "Hello" */
+#video p {
+    display: inline;
+    color: grey;
+}
+
+#hello {
+    display: inline-block;
+}
+
+.iframe-container {
+    margin-top: 8em !important;
+}
+
+@media screen and (max-width: 768px){
+    #video {
+        /*height: 70vh;*/
+    }
+}
+
+/*---- RESPONSIVENESS ---*/
+
+@media screen and (min-width: 1200px){
+    iframe {
+        width: 896px;
+        height: 504px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    iframe {
+        width: 510px;
+        height: 286px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    iframe {
+        width: 384px;
+        height: 216px;
+    }
+
+    .iframe-container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #video, #video-nav-link {
+        display: none;
+    }
+
+    a.navbar-brand {
+        font-size: 0.3em !important;
+    }
+
+    button.navbar-toggler {
+        font-size: 0.2em !important;
+    }
+}
+
+@media screen and (max-height: 616px){
+    iframe {
+        width: 384px;
+        height: 216px;
+    }
+
+    .iframe-container {
+        margin-top: 5.0em;
+    }
+
+    #hello-line {
+        font-size: 0.9em;
+    }
+
+    #video h2 {
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (max-height: 500px){
+    #video, #video-nav-link, #about-image {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.0em;
+    }
+
+    h2 {
+        font-size: 0.9em !important;
+    }
+
+    h3 {
+        font-size: 0.8em !important;
+    }
+
+    p {
+        font-size: 0.7em !important;
+    }
+
+    li {
+        font-size: 0.6em !important;
+    }
+
+    header {
+        padding-bottom: 1.0em;
+    }
+}
+
+     /*------------- ABOUT ------------- */
+
+ /* sizes="(max-width: 600px) 200px, 50vw" */
+
+@media screen and (max-width: 768px){
+    #about {
+        /*height: 80vh;*/
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #about h2 {
+        font-size: 1.5em;
+    }
+
+    #about p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.0em !important;
+    }
+
+    p, li {
+        font-size: 0.7em !important;
+    }
+}
+
+    /* ------------- Skills ------------- */
+
+/*.interests-list {
+    height: 100%;
+}*/
+
+/*.skills-list {
+    padding-bottom: auto;
+}*/
+
+.spaced {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+}
+
+    /* ------------- NAV / LINKS ------------- */
+
+#mainNavbar {
+    font-size: 3rem;
+    font-weight: 500;
+    opacity: .9;
+    background-color: #bbe1fa;
+    width: 100vw;
+}
+
+#mainNavbar .nav-link {
+    color: #0f4c75;
+    text-align: center;
+}
+
+#mainNavbar .nav-link:hover {
+    color: white;
+}
+
+#mainNavbar .navbar-brand {
+    color: #0f4c75;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #bbe1fa;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+#mainNavbar .btn {
+    color: #0f4c75;
+    background-color: white;
+    border: 3px solid #0f4c75;
+    border-radius: 30px;
+}
+
+#mainNavbar .btn:hover {
+    background-color: #0f4c75;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar.scrolled {
+    background: rgba(187, 225, 250, 0.8);
+    transition: background 500ms;
+}
+
+@media screen and (max-width: 768px){
+    #mainNavbar .btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #contact-nav-link {
+        display: none;
+    }
+}
+
+    /* ------------- END ------------- */
+
+
