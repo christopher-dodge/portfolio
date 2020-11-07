@@ -88,6 +88,10 @@ a:hover {
     text-decoration: none;
 }
 
+a.navbar-brand {
+    font-size: 0.35em !important;
+}
+
 @media screen and (max-width: 576px){
     .section {
         height: 100vh !important;
@@ -145,7 +149,13 @@ a:hover {
     100% { transform: translateY(0); }
 }
 
-    /* ------------- VIDEO ------------- */
+    /* ------------- HERO BANNER - TOP SECTION ------------- */
+
+/* #hero-container {
+    background-image: url("./imgs/code-banner-strip-pic.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+} */
 
 /* For "Hello" */
 #video p {
@@ -291,7 +301,7 @@ a:hover {
     }
 }
 
-    /* ------------- Skills ------------- */
+    /* ------------- SKILLS ------------- */
 
 /*.interests-list {
     height: 100%;
@@ -357,6 +367,10 @@ a:hover {
 .navbar.scrolled {
     background: rgba(187, 225, 250, 0.8);
     transition: background 500ms;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
 }
 
 @media screen and (max-width: 768px){
