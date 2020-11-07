@@ -7,7 +7,7 @@ bbe1fa - Light Blue
 
 body, html {
     margin: 0;
-    color: darkgrey;
+    color: grey;
     font-family: "Muli",sans-serif;
     font-weight: 400;
 }
@@ -89,7 +89,7 @@ a:hover {
 }
 
 a.navbar-brand {
-    font-size: 0.35em !important;
+    font-size: 0.4em !important;
 }
 
 @media screen and (max-width: 576px){
@@ -149,32 +149,27 @@ a.navbar-brand {
     100% { transform: translateY(0); }
 }
 
-    /* ------------- HERO BANNER - TOP SECTION ------------- */
+    /* ------------- WELCOME - HERO BANNER - TOP SECTION ------------- */
 
-/* #hero-container {
-    background-image: url("./imgs/code-banner-strip-pic.jpg");
-    background-position: cover;
-    background-repeat: no-repeat;
-} */
-
-/* For "Hello" */
-#video p {
-    display: inline;
-    color: grey;
+.quick-link {
+    width: 10em;
+    margin-bottom: 1em;
 }
 
-#hello {
+.arrow {
+    border: solid grey;
+    border-width: 0 3px 3px 0;
     display: inline-block;
+    padding: 3px;
+  }
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
 }
 
 .iframe-container {
     margin-top: 8em !important;
-}
-
-@media screen and (max-width: 768px){
-    #video {
-        /*height: 70vh;*/
-    }
 }
 
 /*---- RESPONSIVENESS ---*/
@@ -205,7 +200,7 @@ a.navbar-brand {
 }
 
 @media screen and (max-width: 400px){
-    #video, #video-nav-link {
+    #hero-container, #welcome-nav-link {
         display: none;
     }
 
@@ -232,13 +227,13 @@ a.navbar-brand {
         font-size: 0.9em;
     }
 
-    #video h2 {
+    #hero-container h2 {
         font-size: 1.9em;
     }
 }
 
 @media screen and (max-height: 500px){
-    #video, #video-nav-link, #about-image {
+    #hero-container, #welcome-nav-link, #about-image {
         display: none;
     }
 
@@ -269,14 +264,6 @@ a.navbar-brand {
 
      /*------------- ABOUT ------------- */
 
- /* sizes="(max-width: 600px) 200px, 50vw" */
-
-@media screen and (max-width: 768px){
-    #about {
-        /*height: 80vh;*/
-    }
-}
-
 @media screen and (max-width: 1024px){
     #about h2 {
         font-size: 1.5em;
@@ -302,14 +289,6 @@ a.navbar-brand {
 }
 
     /* ------------- SKILLS ------------- */
-
-/*.interests-list {
-    height: 100%;
-}*/
-
-/*.skills-list {
-    padding-bottom: auto;
-}*/
 
 .spaced {
     height: 100%;
@@ -386,5 +365,3 @@ a.navbar-brand {
 }
 
     /* ------------- END ------------- */
-
-
