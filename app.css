@@ -74,6 +74,10 @@ a:hover {
     padding-bottom: 50px;
 }
 
+.card {
+    width: 18rem;
+}
+
 .btn {
     color: grey;
     background-color: white;
@@ -166,6 +170,10 @@ a.navbar-brand {
 .down {
 transform: rotate(45deg);
 -webkit-transform: rotate(45deg);
+}
+
+#hello {
+    color: black !important;
 }
 
 .iframe-container {
@@ -262,6 +270,30 @@ transform: rotate(45deg);
     }
 }
 
+     /*------------- PORTFOLIO ------------- */
+
+#portfolio {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#portfolio h1 {
+    margin-bottom: 1.5em;
+}
+
+#portfolio h5 {
+    color: black;
+}
+
+#portfolio a {
+    color: #0f4c75;
+}
+
+#portfolio a:hover {
+    color: #bbe1fa;
+}
+
      /*------------- ABOUT ------------- */
 
 @media screen and (max-width: 1024px){
@@ -295,6 +327,10 @@ transform: rotate(45deg);
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-around !important;
+}
+
+#skills h1 {
+    text-align: center;
 }
 
     /* ------------- NAV / LINKS ------------- */
