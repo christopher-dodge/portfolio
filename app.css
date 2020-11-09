@@ -208,7 +208,7 @@ transform: rotate(45deg);
 }
 
 @media screen and (max-width: 400px){
-    #hero-container, #welcome-nav-link {
+    #welcome, #welcome-nav-link {
         display: none;
     }
 
@@ -235,13 +235,13 @@ transform: rotate(45deg);
         font-size: 0.9em;
     }
 
-    #hero-container h2 {
+    #welcome h2 {
         font-size: 1.9em;
     }
 }
 
 @media screen and (max-height: 500px){
-    #hero-container, #welcome-nav-link, #about-image {
+    #welcome, #welcome-nav-link, #about-image {
         display: none;
     }
 
