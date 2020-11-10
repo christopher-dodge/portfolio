@@ -208,10 +208,6 @@ transform: rotate(45deg);
 }
 
 @media screen and (max-width: 400px){
-    #welcome, #welcome-nav-link {
-        display: none;
-    }
-
     a.navbar-brand {
         font-size: 0.3em !important;
     }
@@ -241,10 +237,6 @@ transform: rotate(45deg);
 }
 
 @media screen and (max-height: 500px){
-    #welcome, #welcome-nav-link, #about-image {
-        display: none;
-    }
-
     h1 {
         font-size: 1.0em;
     }
@@ -336,7 +328,7 @@ transform: rotate(45deg);
     /* ------------- NAV / LINKS ------------- */
 
 #mainNavbar {
-    font-size: 3rem;
+    font-size: 2.5em;
     font-weight: 500;
     opacity: .9;
     background-color: #bbe1fa;
@@ -354,7 +346,7 @@ transform: rotate(45deg);
 
 #mainNavbar .navbar-brand {
     color: #0f4c75;
-    font-size: 1.5rem;
+    font-size: 1.2rem !important;
 }
 
 #headingGroup span {
