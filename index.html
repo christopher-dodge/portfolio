@@ -282,11 +282,12 @@
         <h1 class="gut-50" data-aos="fade-up" data-aos-duration="1500">Contact</h1>
       </header>
 
-      <form name="contact-form" id="contact-form" method="POST" data-netlify="true">
+      <form name="contact-form" id="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
         <div class="form-row justify-content-center">
           <div class="form-group col-md-4">
             <input type="text" name="name" class="form-control" placeholder="Full Name">
           </div>
+          <input name="bot-field" type="email" style="visibility: hidden; display: none;">
           <div class="form-group col-md-4">
             <input type="email" name="email" class="form-control" placeholder="Email">
           </div>
