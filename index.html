@@ -282,7 +282,7 @@
         <h1 class="gut-50" data-aos="fade-up" data-aos-duration="1500">Contact</h1>
       </header>
 
-      <form name="contact-form" id="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <form name="contact-form" id="contact-form" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
         <div class="form-row justify-content-center">
           <div class="form-group col-md-4">
             <input type="text" name="name" class="form-control" placeholder="Full Name">
@@ -297,6 +297,7 @@
             <textarea name="message" class="form-control" rows="5" placeholder="Message"></textarea>
           </div>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
