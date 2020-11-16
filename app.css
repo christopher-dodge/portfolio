@@ -69,6 +69,7 @@ a:hover {
 
 .section {
     height: 100vh;
+    min-height: 60vw;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -225,6 +226,22 @@ transform: rotate(45deg);
     }
 }
 
+@media screen and (max-height: 768px){
+    #welcome, #about, #skills {
+        min-height: 900px !important;
+    }
+    
+    #skills {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-height: 700px){
+    #skills {
+        min-height: 1000px;
+    }
+}
+
 @media screen and (max-height: 616px){
     iframe {
         width: 384px;
@@ -283,12 +300,6 @@ transform: rotate(45deg);
 
     #about {
         min-height: 550px;
-    }
-}
-
-@media screen and (max-height: 700px){
-    #skills {
-        min-height: 800px;
     }
 }
 
