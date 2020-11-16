@@ -27,7 +27,7 @@
       <a href="#" class="navbar-brand">Christopher Dodge</a>
       
       <!-- <div class="ml-auto mr-4 d-flex align-items-center">
-        <a class="btn" href="mailto:#"><i class="fas fa-envelope"></i> Get In Touch</a>
+        <a class="btn" href="#contact"><i class="fas fa-envelope"></i> Get In Touch</a>
       </div> -->
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
@@ -36,10 +36,6 @@
       
       <div class="collapse navbar-collapse w-50" id="navLinks">
         <ul class="navbar-nav ml-auto">
-
-          <li class="nav-item" id="contact-nav-link">
-            <a class="nav-link" href="mailto:chris@dodgedesign.io">Get In Touch</a>
-          </li>
 
           <li class="nav-item">
             <a href="#welcome" class="nav-link">Welcome</a>
@@ -57,12 +53,16 @@
             <a href="#skills" class="nav-link">Skills</a>
           </li>
 
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
         </ul>
       </div>
     </nav>
 
 
-    <!-- Welcome Top Section - Code Hero Banner -->
+    <!-- Welcome (Top) -->
     <div class="section off-white" id="welcome">
       <div class="gut-50">
         <img src="./imgs/code-banner-strip-pic.jpg" alt="" width="100%" height="auto">
@@ -81,7 +81,7 @@
 
         <div class="row h-50">
           <div class="col-sm-12 my-auto">
-            <div class="mx-auto"><a class="btn quick-link" href="mailto:chris@dodgedesign.io"><i class="fas fa-envelope"></i> Get In Touch</a></div>
+            <div class="mx-auto"><a class="btn quick-link" href="#contact"><i class="fas fa-envelope"></i> Get In Touch</a></div>
             <div class="mx-auto"><a class="btn quick-link" href="#portfolio">Portfolio</a></div>
             <div class="mx-auto"><a class="btn quick-link" href="#about">About</a></div>
             <div class="mx-auto"><a class="btn quick-link" href="#skills">Skills</a></div>
@@ -270,6 +270,36 @@
         </div>
       </div>
 
+    </div>
+
+    <!-- Contact -->
+    <div class="section off-white" id="contact">
+      <header class="col-12">
+        <h1 class="gut-50" data-aos="fade-up" data-aos-duration="1500">Contact</h1>
+      </header>
+
+      <form name="contact-form" id="contact-form" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+        <div class="form-row justify-content-center">
+          <div class="form-group col-md-4">
+            <input type="text" name="name" class="form-control" placeholder="Full Name">
+          </div>
+          <input name="bot-field" type="email" style="visibility: hidden; display: none;">
+          <div class="form-group col-md-4">
+            <input type="email" name="email" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-row justify-content-center">
+          <div class="form-group col-md-8">
+            <textarea name="message" class="form-control" rows="5" placeholder="Message"></textarea>
+          </div>
+        </div>
+        <div class="form-row justify-content-center">
+          <div class="form-group col-md-8">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
     
 

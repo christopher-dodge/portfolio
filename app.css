@@ -69,6 +69,7 @@ a:hover {
 
 .section {
     height: 100vh;
+    min-height: 60vw;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -119,6 +120,14 @@ a.navbar-brand {
 
     #skills div a {
         margin-top: 50px;
+    }
+
+    #skills h2 {
+        font-size: 1em;
+    }
+
+    #skills li {
+        font-size: .7em;
     }
 }
 
@@ -176,36 +185,7 @@ transform: rotate(45deg);
     color: black !important;
 }
 
-.iframe-container {
-    margin-top: 8em !important;
-}
-
 /*---- RESPONSIVENESS ---*/
-
-@media screen and (min-width: 1200px){
-    iframe {
-        width: 896px;
-        height: 504px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    iframe {
-        width: 510px;
-        height: 286px;
-    }
-}
-
-@media screen and (max-width: 576px){
-    iframe {
-        width: 384px;
-        height: 216px;
-    }
-
-    .iframe-container {
-        padding: 0;
-    }
-}
 
 @media screen and (max-width: 400px){
     a.navbar-brand {
@@ -217,16 +197,23 @@ transform: rotate(45deg);
     }
 }
 
+@media screen and (max-height: 768px){
+    #welcome, #about, #skills {
+        min-height: 900px !important;
+    }
+    
+    #skills {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-height: 700px){
+    #skills {
+        min-height: 1000px;
+    }
+}
+
 @media screen and (max-height: 616px){
-    iframe {
-        width: 384px;
-        height: 216px;
-    }
-
-    .iframe-container {
-        margin-top: 5.0em;
-    }
-
     #hello-line {
         font-size: 0.9em;
     }
@@ -259,6 +246,22 @@ transform: rotate(45deg);
 
     header {
         padding-bottom: 1.0em;
+    }
+
+    .quick-link {
+        display: none;
+    }
+
+    .section {
+        min-height: 600px;
+    }
+
+    #welcome {
+        min-height: auto;
+    }
+
+    #about {
+        min-height: 550px;
     }
 }
 
