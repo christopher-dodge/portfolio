@@ -185,36 +185,7 @@ transform: rotate(45deg);
     color: black !important;
 }
 
-.iframe-container {
-    margin-top: 8em !important;
-}
-
 /*---- RESPONSIVENESS ---*/
-
-@media screen and (min-width: 1200px){
-    iframe {
-        width: 896px;
-        height: 504px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    iframe {
-        width: 510px;
-        height: 286px;
-    }
-}
-
-@media screen and (max-width: 576px){
-    iframe {
-        width: 384px;
-        height: 216px;
-    }
-
-    .iframe-container {
-        padding: 0;
-    }
-}
 
 @media screen and (max-width: 400px){
     a.navbar-brand {
@@ -243,15 +214,6 @@ transform: rotate(45deg);
 }
 
 @media screen and (max-height: 616px){
-    iframe {
-        width: 384px;
-        height: 216px;
-    }
-
-    .iframe-container {
-        margin-top: 5.0em;
-    }
-
     #hello-line {
         font-size: 0.9em;
     }
