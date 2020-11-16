@@ -120,6 +120,14 @@ a.navbar-brand {
     #skills div a {
         margin-top: 50px;
     }
+
+    #skills h2 {
+        font-size: 1em;
+    }
+
+    #skills li {
+        font-size: .7em;
+    }
 }
 
     /* ------------- UTILITIES ------------- */
@@ -259,6 +267,28 @@ transform: rotate(45deg);
 
     header {
         padding-bottom: 1.0em;
+    }
+
+    .quick-link {
+        display: none;
+    }
+
+    .section {
+        min-height: 600px;
+    }
+
+    #welcome {
+        min-height: auto;
+    }
+
+    #about {
+        min-height: 550px;
+    }
+}
+
+@media screen and (max-height: 700px){
+    #skills {
+        min-height: 800px;
     }
 }
 
