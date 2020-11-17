@@ -328,7 +328,36 @@ transform: rotate(45deg);
     text-align: center;
 }
 
-    /* ------------- NAV / LINKS ------------- */
+    /* ------------- LINKS-Section ------------- */
+
+#links-section {
+    width: 100%;
+    height: 25vh;
+    min-height: 200px;
+    background: #333;
+    color: #666;
+    font-size: .9em;
+    border-bottom: #000 solid 1px;
+    border-top: #000 solid 1px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#links-section i {
+    font-size: 2.5em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#links-section a {
+    color: #3282b8;
+}
+
+#links-section a:hover {
+    color: #bbe1fa;
+}
+
+    /* ------------- NAV ------------- */
 
 #mainNavbar {
     font-size: 2.5em;
