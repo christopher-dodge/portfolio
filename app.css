@@ -331,7 +331,6 @@ transform: rotate(45deg);
     /* ------------- LINKS-Section ------------- */
 
 #links-section {
-    width: 100%;
     height: 25vh;
     min-height: 200px;
     background: #333;
@@ -355,6 +354,10 @@ transform: rotate(45deg);
 
 #links-section a:hover {
     color: #bbe1fa;
+}
+
+.form-row {
+    margin-right: 0;
 }
 
     /* ------------- NAV ------------- */
