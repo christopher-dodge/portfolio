@@ -197,6 +197,16 @@ transform: rotate(45deg);
     }
 }
 
+@media screen and (max-width: 576px){
+    #contact {
+        min-height: 100vh;
+    }
+
+    #contact header h1 {
+        /* font-size: .5rem !important; */
+    }
+}
+
 @media screen and (max-height: 768px){
     #welcome, #about, #skills {
         min-height: 900px !important;
@@ -265,6 +275,42 @@ transform: rotate(45deg);
     }
 }
 
+@media screen and (max-width: 1024px){
+    #about h2 {
+        font-size: 1.5em;
+    }
+
+    #about p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.0em !important;
+    }
+
+    p, li {
+        font-size: 0.7em !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #mainNavbar .btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #contact-nav-link {
+        display: none;
+    }
+}
+
      /*------------- PORTFOLIO ------------- */
 
 #portfolio {
@@ -291,29 +337,7 @@ transform: rotate(45deg);
 
      /*------------- ABOUT ------------- */
 
-@media screen and (max-width: 1024px){
-    #about h2 {
-        font-size: 1.5em;
-    }
 
-    #about p {
-        font-size: 0.8em;
-    }
-}
-
-@media screen and (max-width: 400px){
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 1.0em !important;
-    }
-
-    p, li {
-        font-size: 0.7em !important;
-    }
-}
 
     /* ------------- SKILLS ------------- */
 
@@ -326,6 +350,16 @@ transform: rotate(45deg);
 
 #skills h1 {
     text-align: center;
+}
+
+    /* ------------- CONTACT ------------- */
+
+#contact {
+    height: 100vh;
+}
+
+#contact-form {
+    margin-bottom: 50px;
 }
 
     /* ------------- LINKS-Section ------------- */
@@ -413,18 +447,6 @@ transform: rotate(45deg);
 
 .navbar-light .navbar-toggler {
     border: none;
-}
-
-@media screen and (max-width: 768px){
-    #mainNavbar .btn {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px){
-    #contact-nav-link {
-        display: none;
-    }
 }
 
     /* ------------- END ------------- */
