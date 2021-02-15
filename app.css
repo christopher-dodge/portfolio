@@ -76,6 +76,7 @@ a:hover {
 }
 
 .card {
+    min-height: 550px;
     width: 18rem;
 }
 
